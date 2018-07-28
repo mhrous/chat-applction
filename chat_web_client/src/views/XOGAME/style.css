@@ -1,0 +1,131 @@
+.xo-game-container {
+  position: absolute;
+  left: 74%;
+  top: 70px;
+  transform: translateX(-100%);
+  z-index: 50;
+}
+
+.xo-game-container .game {
+  background: #262626;
+  width: 250px;
+  height: 280px;
+  position: relative;
+  border-radius: 15px;
+}
+.xo-game-container svg {
+  height: 70px;
+  width: 70px;
+}
+.xo-game-container input {
+  opacity: 1;
+}
+.xo-game-container label {
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  z-index: 2;
+}
+.xo-game-container input,
+.xo-game-container span,
+.xo-game-container label {
+  left: calc(var(--col) * 70px);
+  position: absolute;
+  top: calc(var(--row) * 70px);
+}
+.xo-game-container circle,
+.xo-game-container path {
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: draw;
+  animation-name: draw;
+}
+.xo-game-container circle {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  stroke: #f62459;
+}
+.xo-game-container path {
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  stroke: #36dbd7;
+}
+
+.xo-game-container span {
+  -webkit-transform: translate3d(0, 0, 3px);
+  transform: translate3d(0, 0, 3px);
+}
+.xo-game-container button {
+  width: 70px;
+  height: 70px;
+  opacity: 0;
+}
+
+.xo-game-container .o {
+  -webkit-transform: rotateY(180deg) rotate(-35deg);
+  transform: rotateY(180deg) rotate(-35deg);
+}
+.xo-game-container .x path:nth-of-type(2) {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+.xo-game-container .board {
+  height: 210px;
+  left: 50%;
+  position: absolute;
+  top: 55%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 210px;
+}
+.xo-game-container .board__line {
+  height: 10px;
+  left: calc(var(--x) * 70px);
+  position: absolute;
+  top: calc(var(--y) * 70px);
+  width: 300px;
+}
+.xo-game-container .board__line path {
+  stroke: #fafafa;
+}
+.xo-game-container .board__line:nth-of-type(1),
+.xo-game-container .board__line:nth-of-type(2) {
+  -webkit-transform: rotate(90deg) translate(-5px, 0);
+  transform: rotate(90deg) translate(-5px, 0);
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+.xo-game-container .board__line:nth-of-type(3),
+.xo-game-container .board__line:nth-of-type(4) {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.xo-game-container .board__line:nth-of-type(1) path {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+.xo-game-container .board__line:nth-of-type(2) path {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.xo-game-container .board__line:nth-of-type(3) path {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+.xo-game-container .board__line:nth-of-type(4) path {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

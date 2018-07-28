@@ -1,0 +1,37 @@
+#user {
+  position: relative;
+}
+#user:hove {
+  /* bargba(0, 0, 0, 0.05) */
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+#user .status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  left: 55px;
+  top: 70%;
+  z-index: 10;
+  transform: translate(-100%, -50%);
+}
+
+#user .offline {
+  background: #fd3f39;
+}
+#user .online {
+  background: #53d86a;
+}
+#user .notification {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translateY(-50%);
+  background: rgb(0, 152, 255);
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 25px;
+  color: white;
+}

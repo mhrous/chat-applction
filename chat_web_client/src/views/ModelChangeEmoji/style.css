@@ -1,0 +1,9 @@
+#emoji-content {
+  display: flex;
+  height: 270px;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  max-width: 300px;
+}

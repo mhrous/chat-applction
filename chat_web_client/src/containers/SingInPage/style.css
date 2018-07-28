@@ -1,0 +1,38 @@
+#login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 350px;
+  transform: translate(-50%, -50%);
+  padding: 10px 30px 80px 30px;
+  border-radius: 4px;
+  background: #03121c;
+  background: #fff;
+
+  box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+#login .title {
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+}
+#login img {
+  margin: 40px auto;
+  display: block;
+  width: 120px;
+}
+#login .footer {
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box;
+  border-top: 1px solid #e9ebee;
+}
+#login .footer a {
+  text-decoration: none;
+  color: #4285f4;
+}

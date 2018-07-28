@@ -1,0 +1,14 @@
+#color {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+#color-content {
+  margin-top: 20px;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,98 @@
+#left-chat-bar {
+  flex: 0 0 25%;
+  max-width: 420px;
+  min-width: 240px;
+}
+
+#left-chat-bar .header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  height: 50px;
+  justify-content: space-between;
+  padding: 8px;
+  width: 100%;
+  vertical-align: middle;
+  display: flex;
+}
+#left-chat-bar .user-settings {
+  background-image: url("../../assets/facebookIcon.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -766px;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  color: #0084ff;
+}
+
+#left-chat-bar .title {
+  line-height: 30px;
+  font-size: 20px;
+  color: #1d2129;
+  font-weight: lighter;
+}
+
+#left-chat-bar .search-messenger {
+  display: block;
+  padding: 12px 12px;
+  position: relative;
+}
+#left-chat-bar .search-messenger label {
+  box-sizing: border-box;
+  cursor: default;
+  display: inline-block;
+  font-weight: normal;
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+#left-chat-bar .search-messenger label::before {
+  background-image: url("../../assets/facebookIcon2.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -34px -350px;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  left: 8px;
+  position: absolute;
+  top: 12px;
+  width: 12px;
+  vertical-align: middle;
+}
+
+#left-chat-bar .search-for-a-chat-input {
+  background-color: #f6f7f9;
+  border-radius: 5px;
+  border-style: none;
+  box-sizing: border-box;
+  font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 30px;
+  width: 100%;
+}
+
+#left-chat-bar .chat-select {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#left-chat-bar .list-of-chat-user {
+  overflow-y: auto;
+  height: calc(100vh - 120px);
+}
+.notification {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translateY(-50%);
+  background: rgb(0, 152, 255);
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 25px;
+  color: white;
+}
