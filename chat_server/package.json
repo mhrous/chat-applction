@@ -8,7 +8,7 @@
     "node": "8.9.1"
   },
   "scripts": {
-    "start": "cd src & node index.js"
+    "start": "cd ./src && node index.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
